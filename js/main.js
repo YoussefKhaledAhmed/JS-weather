@@ -55,6 +55,8 @@ let APIKey = '66a70c97bd6d495694600851241012';
 
 // Get the full URL of the current page
 const fullPath = window.location.pathname;
+console.log('fullpath ->' , fullPath);
+
 
 // Extract the current file name
 const currentFile = fullPath.substring(fullPath.lastIndexOf('/') + 1);
