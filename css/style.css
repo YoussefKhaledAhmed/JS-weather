@@ -1,0 +1,329 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #009ad8;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    margin: 0;
+}
+
+nav{
+    background-color: #1e202b;
+    color: white;
+}
+
+.logo-image{
+    width: 70px;
+}
+
+.logo-txt{
+    color: white;
+}
+
+small{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.list-items{
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.3s;
+}
+
+.list-items-default-color{
+    color: white;
+    border-color: transparent;
+}
+
+.list-items-clicked-color{
+    outline: 1px dotted var(--main-color);
+    border-color: var(--main-color);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.list-items:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+main#index-main{
+    background-color: #1E202B;
+    background-image: url(../imgs/banner.png);
+    background-repeat: no-repeat;
+}
+
+#LocationInput{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #1E202B;
+    caret-color: white;
+    color: white;
+}
+
+#LocationInput:focus{
+    outline: none;
+}
+
+.main-section button{
+    padding: 0.5rem 40px;
+    height: 2.5rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    margin-right: 16px;
+}
+
+table{
+    color: rgb(191, 193, 200);
+}
+
+#head-1st-col{
+    background-color: #2D303D;
+    height: 3rem;
+    border-top-left-radius: 10px;
+}
+#head-2nd-col{
+    background-color: #222530;
+    height: 3rem;
+}
+#head-3rd-col{
+    background-color: #2D303D;
+    height: 3rem;
+    border-top-right-radius: 10px;
+}
+
+#body-1st-col{
+    background-color: #323544;
+    border-bottom-left-radius: 10px;
+}
+
+#body-2nd-col{
+    background-color: #262936;
+}
+
+#body-3rd-col{
+    background-color: #323544;
+    border-bottom-right-radius: 10px;
+}
+
+.location{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.temp .degree{
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+}
+
+.temp .temp-img{
+    width: 25%;
+}
+
+.climate-status{
+    color: var(--main-color);
+}
+
+.weather-more-info-item-icon{
+    width: 20%;    
+}
+
+.temp-img-2nd{
+    width: 15%;
+}
+
+.max-degree{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.min-degree{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer{
+    background-color: #262936;
+}
+
+#emailInput{
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    background-color: #1E202B;
+    caret-color: white;
+    color: white;
+}
+
+#emailInput:focus{
+    outline: none;
+}
+
+.subscribe button{
+    padding: 0.5rem 40px;
+    height: 3rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    margin-right: 16px;
+}
+
+.icon-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1E202B;
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+
+i{
+    color: inherit;
+}
+
+.icon-circle:hover{
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+footer p{
+    color: rgb(191, 193, 200);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#contact-main-section{
+    background-color: #1e202b;
+
+    a{
+        color: rgb(191, 193, 200);
+    }
+    i{
+        color: rgb(191, 193, 200);
+    }
+    span{
+        color: white;
+    }
+}
+
+.above-bar{
+    height: 3rem;
+    background-color: #262936;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.map{
+    background-color: #262936;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.location-icon{
+    width: 12px;
+}
+.phone-email-icon{
+    width: 15px;
+}
+
+.location p{
+    color: rgb(191, 193, 200);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contact-form{
+    color: white;
+}
+
+.input-style,
+#message{
+    outline: none;
+    border: 2px solid #393c48;
+    height: 3.5rem;
+    background-color: transparent;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    caret-color: white;
+    color: white;
+}
+
+#message{
+    height: auto;
+}
+
+.input-style:hover,
+#message:hover{
+    border-color: var(--main-color);
+}
+.input-style:focus,
+#message:focus{
+    border-color: var(--main-color);
+}
+
+.submitBtn{
+    background-color: var(--main-color);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 3rem;
+    width: 100px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.input-style{
+    width: 45%;
+}
+
+#Home-anchor:hover{
+    text-decoration: underline;
+}
