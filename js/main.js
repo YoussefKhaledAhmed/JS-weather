@@ -69,15 +69,12 @@ let navBtnsClick = () =>{
 
     console.log('current file: ', currentFile);
 
-    switch(currentFile){
-        case "index.html":
-            navBtns[0].classList.remove('list-items-default-color');
-            navBtns[0].classList.add('list-items-clicked-color');
-            break;
-        case "contact.html": 
-            navBtns[4].classList.remove('list-items-default-color');
-            navBtns[4].classList.add('list-items-clicked-color');
-            break;
+    if(currentFile === "contact.html"){
+        navBtns[4].classList.remove('list-items-default-color');
+        navBtns[4].classList.add('list-items-clicked-color');
+    }else{
+        navBtns[0].classList.remove('list-items-default-color');
+        navBtns[0].classList.add('list-items-clicked-color');
     }
 }
 
